@@ -9,5 +9,8 @@ export default defineConfig({
                 sass: resolve(__dirname, "SASS.html")
             }
         }
+    },
+    css: {
+        devSourcemap: true
     }
 });

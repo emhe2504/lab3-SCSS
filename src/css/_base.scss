@@ -1,0 +1,13 @@
+@use "variables";
+
+header {
+
+    h1 {
+        background-color: variables.$primary-color;
+    }
+}
+
+body {
+    background-color: variables.$secondary-color
+}
+
