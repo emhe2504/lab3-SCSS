@@ -39,7 +39,24 @@ header {
 
 main {
 
-    h2 {
-        text-align: center;
+    article {
+        width: 60%;
+        justify-self: center;
+        padding: 1%;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin-top: 4%;
+            text-align: center;
+        }
     }
+}
+
+footer {
+    margin-top: 4%;
+    padding: 1%;
+    text-align: center;
 }

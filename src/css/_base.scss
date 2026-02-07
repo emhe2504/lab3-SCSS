@@ -6,7 +6,7 @@ header {
 
         a {
             color: variables.$head-color;
-            font-size: 140%;
+            font-size: 130%;
             text-decoration: none;
         }
     }
@@ -15,10 +15,16 @@ header {
         background-color: variables.$primary-color;
 
         a {
+            display: inline-block;
             text-decoration: none;
             font-weight: bold;
             font-size: 120%;
             color: variables.$head-color;
+
+            &:hover {
+                transform: scale(1.2);
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -31,8 +37,26 @@ body {
 
 main {
 
-    h2 {
-        color: variables.$head-color;
-        font-size: 180%;
+    article {
+        background-color: variables.$primary-color;
+        border: 2px solid variables.$head-color;
+
+        h2 {
+            color: variables.$head-color;
+            font-size: 180%;
+        }
+
+        p {
+            letter-spacing: 0.5px;
+            font-size: 110%;
+        }
+
+        ul {
+            line-height: 2em;
+        }
     }
+}
+
+footer {
+    background-color: variables.$primary-color;
 }
