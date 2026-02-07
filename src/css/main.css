@@ -1,32 +1,18 @@
-header h1 {
-  background-color: #D78FEE;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 13 |                 color: $head-dark;
+ *    |                        ^^^^^^^^^^
+ *    '
+ *   src\css\_base.scss 13:24  @use
+ *   src\css\main.scss 1:1     root stylesheet */
 
-body {
-  background-color: #FDCFFA;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502                  color: $head-dark;\d\a    \2502                         ^^^^^^^^^^\a    \2575 \a   src\\css\\_base.scss 13:24  @use\a   src\\css\\main.scss 1:1     root stylesheet";
 }
-
-#container {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  margin-bottom: 3%;
-}
-header h1 {
-  margin-top: 0;
-  padding: 2%;
-}
-header nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 1%;
-}
-
-/*# sourceMappingURL=main.css.map */

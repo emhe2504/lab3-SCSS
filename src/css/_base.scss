@@ -5,45 +5,74 @@ header {
     h1 {
 
         a {
-            color: variables.$head-color;
+            color: variables.$head-light;
             font-size: 130%;
             text-decoration: none;
+
+            @media (prefers-color-scheme: dark) {
+                color: variables.$head-dark;
+            }
         }
     }
 
-    ul {
-        background-color: variables.$primary-color;
+    nav {
 
-        a {
-            display: inline-block;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 120%;
-            color: variables.$head-color;
+        ul {
+            background-color: variables.$primary-light;
 
-            &:hover {
-                transform: scale(1.2);
-                text-decoration: underline;
+            @media (prefers-color-scheme: dark) {
+                background-color: variables.$primary-dark;
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 125%;
+                color: variables.$head-light;
+
+                @media (prefers-color-scheme: dark) {
+                    color: variables.$head-dark;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                    text-decoration: underline;
+                }
             }
         }
+
     }
 }
 
 body {
-    background-color: variables.$secondary-color;
+    background-color: variables.$secondary-light;
     font-family: variables.$primary-font;
-    color: variables.$first-text;
+    color: variables.$text-light;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: variables.$secondary-dark;
+        color: variables.$text-dark;
+    }
 }
 
 main {
 
     article {
-        background-color: variables.$primary-color;
-        border: 2px solid variables.$head-color;
+        background-color: variables.$primary-light;
+        border: 2px solid variables.$head-light;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: variables.$primary-dark;
+        }
 
         h2 {
-            color: variables.$head-color;
+            color: variables.$head-light;
             font-size: 180%;
+
+            @media (prefers-color-scheme: dark) {
+                color: variables.$head-dark;
+            }
         }
 
         p {
@@ -58,5 +87,9 @@ main {
 }
 
 footer {
-    background-color: variables.$primary-color;
+    background-color: variables.$primary-light;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: variables.$primary-dark;
+    }
 }
