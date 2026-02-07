@@ -3,11 +3,36 @@
 header {
 
     h1 {
+
+        a {
+            color: variables.$head-color;
+            font-size: 140%;
+            text-decoration: none;
+        }
+    }
+
+    ul {
         background-color: variables.$primary-color;
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 120%;
+            color: variables.$head-color;
+        }
     }
 }
 
 body {
-    background-color: variables.$secondary-color
+    background-color: variables.$secondary-color;
+    font-family: variables.$primary-font;
+    color: variables.$first-text;
 }
 
+main {
+
+    h2 {
+        color: variables.$head-color;
+        font-size: 180%;
+    }
+}
