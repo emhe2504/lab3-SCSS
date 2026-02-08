@@ -45,6 +45,7 @@ main {
 
     #starttext,
     #SASS-text {
+        display: grid;
         @extend %text;
 
         h2 {
@@ -59,24 +60,33 @@ main {
 
     #SASS-text {
 
-        ul {
-            li {
-                div {
-                    display: grid;
-                    grid-template-columns: 60% 1fr;
+        article {
 
-                    #up,
-                    #down {
-                        text-align: center;
-                        align-self: center;
-                    }
-                }
+            width: 95%;
+            justify-self: center;
+            margin-top: 3%;
+            margin-bottom: 3%;
 
-                p {
-                    text-align: left;
-                    margin-top: 0;
-                    max-width: 68ch;
+            h3 {
+                margin-left: 3%;
+                margin-bottom: 0;
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: 60% 1fr;
+
+                #up,
+                #down {
+                    text-align: center;
+                    align-self: center;
                 }
+            }
+
+            p {
+                text-align: left;
+                max-width: 68ch;
+                margin-left: 2%;
             }
         }
     }

@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 .is_hidden {
     display: none !important;
@@ -103,16 +104,66 @@ main {
 
     #SASS-text {
 
-        ul {
-            li {
-                div {
+        article {
 
-                    #up,
-                    #down {
-                        font-size: 350%;
-                    }
+            h3 {
+                color: variables.$head-light;
+                font-size: 140%;
+
+                @media (prefers-color-scheme: dark) {
+                    color: variables.$head-dark;
                 }
             }
+
+            div {
+
+                #up {
+                    font-size: 270%;
+                    color: rgb(79, 110, 101);
+
+                    @media (prefers-color-scheme: dark) {
+                    color: rgb(180, 211, 202);
+                }
+                }
+                #down {
+                    font-size: 270%;
+                    color: rgb(141, 62, 62);
+
+                    @media (prefers-color-scheme: dark) {
+                    color: rgb(207, 148, 148);
+                }
+                }
+            }
+
+            p {
+                line-height: 1.5em;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        #art1 {
+            @include mixins.article-style("positive");
+
+            @media (prefers-color-scheme: dark) {
+                    background-color: rgb(70, 95, 88);
+                }
+        }
+
+        #art2 {
+            @include mixins.article-style("negative");
+
+            @media (prefers-color-scheme: dark) {
+                    background-color: rgb(117, 47, 47);
+                }
+        }
+
+        #art3 {
+            @include mixins.article-style("summary");
+
+            @media (prefers-color-scheme: dark) {
+                    background-color: rgb(18, 41, 59);
+                    border: 2px solid rgb(180, 205, 243);
+                }
         }
     }
 
@@ -131,9 +182,11 @@ main {
         #bubble2,
         #bubble3 {
             background-color: variables.$primary-light;
+            border: 2px solid variables.$head-light;
 
             @media (prefers-color-scheme: dark) {
                 background-color: variables.$primary-dark;
+                border: 2px solid variables.$head-dark;
                 color: variables.$text-dark;
             }
 
