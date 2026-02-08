@@ -57,23 +57,38 @@ main {
             text-align: center;
         }
     }
+
     picture {
         justify-self: right;
         padding-right: 10%;
         margin-top: 0;
     }
 
-    #bubble1,
-    #bubble2 {
-        @include mixins.bubblePlacement();
+    #bubble-section {
+
+        #section-head {
+            margin-left: 3%;
+        }
+
+        #bubble1,
+        #bubble2 {
+            @include mixins.bubblePlacement();
+        }
+
+        #bubble3 {
+            @include mixins.bubblePlacement();
+
+            #forAnswer {
+                width: 15%;
+            }
+        }
     }
 
-    #bubble3 {
-        @include mixins.bubblePlacement();
-
-        #forAnswer {
-            width: 15%;
-        }
+    #letter {
+        align-self: end;
+        justify-self: left;
+        margin-left: 4%;
+        margin-top: 4%;
     }
 }
 

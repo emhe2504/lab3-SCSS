@@ -1,7 +1,7 @@
 @use "variables";
 
 .is_hidden {
-    display: none !important; 
+    display: none !important;
 }
 
 header {
@@ -48,6 +48,10 @@ header {
                 &:hover {
                     transform: scale(1.1);
                     border-bottom: 2px solid variables.$head-light;
+
+                    @media (prefers-color-scheme: dark) {
+                        border-bottom: 2px solid variables.$head-dark;
+                    }
                 }
             }
         }
@@ -96,22 +100,34 @@ main {
         }
     }
 
-    #bubble1,
-    #bubble2,
-    #bubble3 {
-        background-color: variables.$primary-light;
-        border: 2px solid variables.$head-light;
+    #bubble-section {
 
-        @media (prefers-color-scheme: dark) {
-            background-color: variables.$primary-dark;
-            color: variables.$text-dark;
-        }
+        #section-head {
+            color: variables.$head-light;
+            font-size: 135%;
 
-        h3 {
             @media (prefers-color-scheme: dark) {
                 color: variables.$head-dark;
             }
         }
+
+        #bubble1,
+        #bubble2,
+        #bubble3 {
+            background-color: variables.$primary-light;
+
+            @media (prefers-color-scheme: dark) {
+                background-color: variables.$primary-dark;
+                color: variables.$text-dark;
+            }
+
+            h3 {
+                @media (prefers-color-scheme: dark) {
+                    color: variables.$head-dark;
+                }
+            }
+        }
+
     }
 }
 

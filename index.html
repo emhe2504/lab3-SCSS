@@ -40,20 +40,27 @@
         <source srcset="/images/hund.webp" type="image/webp">
         <img src="/images/hund.jpg" width="300" alt="Svart hund med solglasögon och tass i luften">
       </picture>
-      <article id="bubble1">
-        <h3>Ändra utseende?</h3>
-        <p>Denna sida är även anpassad med ett färgschema för mörk läge.</p>
-      </article>
-      <article id="bubble2">
-        <h3>Visste du att?</h3>
-        <p>Bilden på den snygga hunden är tagen på en figur i mitt vardagsrum.</p>
-      </article>
-      <article id="bubble3">
-        <h3>En gåta</h3>
-        <p>Vad är det som kan sitta i ett hörn, men ändå åka jorden runt?</p>
-        <input type="button" value="Svar" id="forAnswer">
-        <p id="answer" class="is_hidden">Frimärket</p>
-      </article>
+        <section id="bubble-section">
+          <h3 id="section-head">Info-bubblor:</h3>
+          <article id="bubble1">
+            <h3>Ändra utseende?</h3>
+            <p>Denna sida är även anpassad med ett färgschema för mörk läge.</p>
+          </article>
+          <article id="bubble2">
+            <h3>Visste du att?</h3>
+            <p>Bilden på den snygga hunden är tagen på en figur i mitt vardagsrum.</p>
+          </article>
+          <article id="bubble3">
+            <h3>En gåta</h3>
+            <p>Vad är det som kan sitta i ett hörn, men ändå åka jorden runt?</p>
+            <input type="button" value="Svar" id="forAnswer">
+            <p id="answer" class="is_hidden">Frimärket</p>
+            <picture id="letter" class="is_hidden">
+              <source srcset="/images/brev.webp" type="image/webp">
+              <img src="/images/brev.jpg" width="300" alt="Brev med frimärken">
+            </picture>
+          </article>
+        </section>
     </main>
     <footer>
       <h4>Webbutvecklingsprogrammet, kurs DT211G - Frontend-baserad webbutveckling</h4>
