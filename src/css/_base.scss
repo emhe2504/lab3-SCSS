@@ -46,6 +46,11 @@ header {
                     border-bottom: 1px solid variables.$head-dark;
                 }
 
+                @media only screen and (max-width: 1050px) {
+                    padding-bottom: 1%;
+                    margin-bottom: 4%;
+                }
+
                 &:hover {
                     transform: scale(1.1);
                     border-bottom: 2px solid variables.$head-light;
@@ -122,16 +127,17 @@ main {
                     color: rgb(79, 110, 101);
 
                     @media (prefers-color-scheme: dark) {
-                    color: rgb(180, 211, 202);
+                        color: rgb(180, 211, 202);
+                    }
                 }
-                }
+
                 #down {
                     font-size: 270%;
                     color: rgb(141, 62, 62);
 
                     @media (prefers-color-scheme: dark) {
-                    color: rgb(207, 148, 148);
-                }
+                        color: rgb(207, 148, 148);
+                    }
                 }
             }
 
@@ -145,25 +151,25 @@ main {
             @include mixins.article-style("positive");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: darken(variables.$color1, 40%);
-                }
+                background-color: darken(variables.$color1, 40%);
+            }
         }
 
         #art2 {
             @include mixins.article-style("negative");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: darken(variables.$color2, 62%);
-                }
+                background-color: darken(variables.$color2, 62%);
+            }
         }
 
         #art3 {
             @include mixins.article-style("summary");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: lighten(variables.$color3, 10%);
-                    border: 2px solid rgb(180, 205, 243);
-                }
+                background-color: lighten(variables.$color3, 10%);
+                border: 2px solid rgb(180, 205, 243);
+            }
         }
     }
 
