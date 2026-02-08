@@ -1,5 +1,9 @@
 @use "variables";
 
+.is_hidden {
+    display: none !important; 
+}
+
 header {
 
     h1 {
