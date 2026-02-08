@@ -145,7 +145,7 @@ main {
             @include mixins.article-style("positive");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: rgb(70, 95, 88);
+                    background-color: darken(variables.$color1, 40%);
                 }
         }
 
@@ -153,7 +153,7 @@ main {
             @include mixins.article-style("negative");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: rgb(117, 47, 47);
+                    background-color: darken(variables.$color2, 62%);
                 }
         }
 
@@ -161,7 +161,7 @@ main {
             @include mixins.article-style("summary");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: rgb(18, 41, 59);
+                    background-color: darken(variables.$color3, 30%);
                     border: 2px solid rgb(180, 205, 243);
                 }
         }
