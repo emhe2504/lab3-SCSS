@@ -38,11 +38,13 @@ header {
 }
 
 main {
+    display: grid;
 
     article {
         width: 60%;
         justify-self: center;
         padding: 1%;
+        margin-bottom: 0;
 
         h2 {
             text-align: center;
@@ -52,6 +54,11 @@ main {
             margin-top: 4%;
             text-align: center;
         }
+    }
+    picture {
+        justify-self: right;
+        padding-right: 10%;
+        margin-top: 0;
     }
 }
 
