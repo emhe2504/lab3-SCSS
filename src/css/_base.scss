@@ -161,7 +161,7 @@ main {
             @include mixins.article-style("summary");
 
             @media (prefers-color-scheme: dark) {
-                    background-color: darken(variables.$color3, 30%);
+                    background-color: lighten(variables.$color3, 10%);
                     border: 2px solid rgb(180, 205, 243);
                 }
         }
