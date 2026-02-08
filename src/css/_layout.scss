@@ -1,4 +1,5 @@
 @use "mixins";
+@use "details";
 
 #container {
     display: grid;
@@ -42,11 +43,9 @@ header {
 main {
     display: grid;
 
-    #starttext {
-        width: 60%;
-        justify-self: center;
-        padding: 1%;
-        margin-bottom: 0;
+    #starttext,
+    #SASS-text {
+        @extend %text;
 
         h2 {
             text-align: center;
@@ -55,6 +54,30 @@ main {
         p {
             margin-top: 4%;
             text-align: center;
+        }
+    }
+
+    #SASS-text {
+
+        ul {
+            li {
+                div {
+                    display: grid;
+                    grid-template-columns: 60% 1fr;
+
+                    #up,
+                    #down {
+                        text-align: center;
+                        align-self: center;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    margin-top: 0;
+                    max-width: 68ch;
+                }
+            }
         }
     }
 

@@ -72,7 +72,8 @@ body {
 
 main {
 
-    #starttext {
+    #starttext,
+    #SASS-text {
         background-color: variables.$primary-light;
         border: 2px solid variables.$head-light;
 
@@ -97,6 +98,21 @@ main {
 
         ul {
             line-height: 2em;
+        }
+    }
+
+    #SASS-text {
+
+        ul {
+            li {
+                div {
+
+                    #up,
+                    #down {
+                        font-size: 350%;
+                    }
+                }
+            }
         }
     }
 
