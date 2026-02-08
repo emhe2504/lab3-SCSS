@@ -38,6 +38,7 @@ header {
 
                 @media (prefers-color-scheme: dark) {
                     color: variables.$head-dark;
+                    border-bottom: 1px solid variables.$head-dark;
                 }
 
                 &:hover {
@@ -63,12 +64,13 @@ body {
 
 main {
 
-    article {
+    #starttext {
         background-color: variables.$primary-light;
         border: 2px solid variables.$head-light;
 
         @media (prefers-color-scheme: dark) {
             background-color: variables.$primary-dark;
+            border: 2px solid variables.$head-dark;
         }
 
         h2 {
@@ -87,6 +89,24 @@ main {
 
         ul {
             line-height: 2em;
+        }
+    }
+
+    #bubble1,
+    #bubble2,
+    #bubble3 {
+        background-color: variables.$primary-light;
+        border: 2px solid variables.$head-light;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: variables.$primary-dark;
+            color: variables.$text-dark;
+        }
+
+        h3 {
+            @media (prefers-color-scheme: dark) {
+                color: variables.$head-dark;
+            }
         }
     }
 }
