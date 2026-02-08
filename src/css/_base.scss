@@ -51,6 +51,10 @@ header {
                     margin-bottom: 4%;
                 }
 
+                @media only screen and (max-width: 650px) {
+                    font-size: 110%;
+                }
+
                 &:hover {
                     transform: scale(1.1);
                     border-bottom: 2px solid variables.$head-light;
@@ -100,6 +104,10 @@ main {
         p {
             letter-spacing: 0.5px;
             font-size: 110%;
+
+            @media only screen and (max-width: 650px) {
+                font-size: 100%;
+            }
         }
 
         ul {

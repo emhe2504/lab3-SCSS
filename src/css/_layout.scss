@@ -20,6 +20,10 @@ header {
     h1 {
         padding: 1%;
         text-align: center;
+
+        @media only screen and (max-width: 650px) {
+            font-size: 160%;
+        }
     }
 
     nav {
@@ -55,6 +59,14 @@ main {
         display: grid;
         @extend %text;
 
+        @media only screen and (max-width: 1050px) {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 650px) {
+            width: 85%;
+        }
+
         h2 {
             text-align: center;
         }
@@ -83,6 +95,10 @@ main {
                 display: grid;
                 grid-template-columns: 60% 1fr;
 
+                @media only screen and (max-width: 1050px) {
+                    grid-template-columns: none;
+                }
+
                 #up,
                 #down {
                     text-align: center;
@@ -94,14 +110,26 @@ main {
                 text-align: left;
                 max-width: 68ch;
                 margin-left: 2%;
+
+                @media only screen and (max-width: 1050px) {
+                    max-width: 85%;
+                }
+
+                @media only screen and (max-width: 650px) {
+                    max-width: 95%;
+                }
             }
         }
     }
 
     picture {
         justify-self: right;
-        padding-right: 10%;
+        margin-right: 10%;
         margin-top: 0;
+
+        @media only screen and (max-width: 1050px) {
+            margin-right: 5%;
+        }
     }
 
     #bubble-section {
@@ -113,10 +141,26 @@ main {
         #bubble1,
         #bubble2 {
             @include mixins.bubblePlacement();
+
+            @media only screen and (max-width: 1050px) {
+                width: 50%;
+            }
+
+            @media only screen and (max-width: 650px) {
+                width: 75%;
+            }
         }
 
         #bubble3 {
             @include mixins.bubblePlacement();
+
+            @media only screen and (max-width: 1050px) {
+                width: 50%;
+            }
+
+            @media only screen and (max-width: 650px) {
+                width: 75%;
+            }
 
             #forAnswer {
                 width: 15%;
@@ -129,6 +173,12 @@ main {
         justify-self: left;
         margin-left: 4%;
         margin-top: 4%;
+
+        img {
+            @media only screen and (max-width: 650px) {
+                width: 200px;
+            }
+        }
     }
 }
 
@@ -136,4 +186,8 @@ footer {
     margin-top: 4%;
     padding: 1%;
     text-align: center;
+
+    @media only screen and (max-width: 650px) {
+        font-size: 90%;
+    }
 }
