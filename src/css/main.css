@@ -1,0 +1,522 @@
+.is_hidden {
+  display: none !important;
+}
+
+header h1 a {
+  display: inline-block;
+  color: #8A244B;
+  font-size: 130%;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  header h1 a {
+    color: #DDAED3;
+  }
+}
+
+header nav ul {
+  background-color: #FFE3ED;
+}
+
+@media (prefers-color-scheme: dark) {
+  header nav ul {
+    background-color: #234C6A;
+  }
+}
+
+header nav ul a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 125%;
+  color: #8A244B;
+  border-bottom: 1px solid #8A244B;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+
+@media (prefers-color-scheme: dark) {
+  header nav ul a {
+    color: #DDAED3;
+    border-bottom: 1px solid #DDAED3;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  header nav ul a {
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header nav ul a {
+    font-size: 110%;
+  }
+}
+
+header nav ul a:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid #8A244B;
+}
+
+@media (prefers-color-scheme: dark) {
+  header nav ul a:hover {
+    border-bottom: 2px solid #DDAED3;
+  }
+}
+
+body {
+  background-color: #E1AFD1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #213C51;
+    color: #EEEEEE;
+  }
+}
+
+main #starttext,
+main #SASS-text {
+  background-color: #FFE3ED;
+  border: 2px solid #8A244B;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  main #starttext,
+  main #SASS-text {
+    background-color: #234C6A;
+    border: 2px solid #DDAED3;
+  }
+}
+
+main #starttext h2,
+main #SASS-text h2 {
+  color: #8A244B;
+  font-size: 180%;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  main #starttext h2,
+  main #SASS-text h2 {
+    color: #DDAED3;
+  }
+}
+
+main #starttext p,
+main #SASS-text p {
+  letter-spacing: 0.5px;
+  font-size: 110%;
+}
+
+@media only screen and (max-width: 650px) {
+
+  main #starttext p,
+  main #SASS-text p {
+    font-size: 100%;
+  }
+}
+
+main #starttext ul,
+main #SASS-text ul {
+  line-height: 2em;
+}
+
+main #SASS-text article h3 {
+  color: #8A244B;
+  font-size: 140%;
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text article h3 {
+    color: #DDAED3;
+  }
+}
+
+main #SASS-text article div #up {
+  font-size: 270%;
+  color: rgb(79, 110, 101);
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text article div #up {
+    color: rgb(180, 211, 202);
+  }
+}
+
+main #SASS-text article div #down {
+  font-size: 270%;
+  color: rgb(141, 62, 62);
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text article div #down {
+    color: rgb(207, 148, 148);
+  }
+}
+
+main #SASS-text article p {
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+main #SASS-text #art1 {
+  background-color: rgb(179, 206, 192);
+  border: 2px solid rgb(79, 110, 101);
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text #art1 {
+    background-color: rgb(70.952, 110.048, 89.776);
+  }
+}
+
+main #SASS-text #art2 {
+  background-color: rgb(247, 182, 182);
+  border: 2px solid rgb(141, 62, 62);
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text #art2 {
+    background-color: rgb(130.6125, 15.1875, 15.1875);
+  }
+}
+
+main #SASS-text #art3 {
+  background-color: rgb(245, 234, 175);
+  border: 2px solid rgb(219, 169, 3);
+}
+
+@media (prefers-color-scheme: dark) {
+  main #SASS-text #art3 {
+    background-color: rgb(8.275862069, 44.1379310345, 71.724137931);
+    border: 2px solid rgb(180, 205, 243);
+  }
+}
+
+main #bubble-section #section-head {
+  color: #8A244B;
+  font-size: 135%;
+}
+
+@media (prefers-color-scheme: dark) {
+  main #bubble-section #section-head {
+    color: #DDAED3;
+  }
+}
+
+main #bubble-section #bubble1,
+main #bubble-section #bubble2,
+main #bubble-section #bubble3 {
+  background-color: #FFE3ED;
+  border: 2px solid #8A244B;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  main #bubble-section #bubble1,
+  main #bubble-section #bubble2,
+  main #bubble-section #bubble3 {
+    background-color: #234C6A;
+    border: 2px solid #DDAED3;
+    color: #EEEEEE;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  main #bubble-section #bubble1 h3,
+  main #bubble-section #bubble2 h3,
+  main #bubble-section #bubble3 h3 {
+    color: #DDAED3;
+  }
+}
+
+footer {
+  background-color: #FFE3ED;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: #234C6A;
+  }
+}
+
+main #starttext,
+main #SASS-text {
+  width: 60%;
+  justify-self: center;
+  padding: 1%;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
+
+#bubble-section #letter {
+  transform: rotate(5deg);
+}
+
+#menu {
+  display: grid;
+  width: 15%;
+  justify-self: left;
+  color: #8A244B;
+  font-weight: bold;
+  font-size: 120%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 4%;
+  border: none;
+  background-color: #FFE3ED;
+}
+
+@media (prefers-color-scheme: dark) {
+  #menu {
+    color: #DDAED3;
+    background-color: #234C6A;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #menu {
+    width: 24%;
+    font-size: 100%;
+  }
+}
+
+#container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  margin-bottom: 3%;
+}
+
+header h1 {
+  padding: 1%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  header h1 {
+    font-size: 160%;
+  }
+}
+
+header nav {
+  display: grid;
+  width: 100%;
+}
+
+header ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  justify-self: center;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media only screen and (max-width: 1050px) {
+  header ul {
+    grid-template-columns: none;
+    width: 30%;
+    justify-self: left;
+    margin-left: 4%;
+  }
+}
+
+main {
+  display: grid;
+}
+
+main #starttext,
+main #SASS-text {
+  display: grid;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  main #starttext,
+  main #SASS-text {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  main #starttext,
+  main #SASS-text {
+    width: 85%;
+  }
+}
+
+main #starttext h2,
+main #SASS-text h2 {
+  text-align: center;
+}
+
+main #starttext p,
+main #SASS-text p {
+  margin-top: 4%;
+  text-align: center;
+}
+
+main #SASS-text article {
+  width: 95%;
+  justify-self: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+main #SASS-text article h3 {
+  margin-left: 3%;
+  margin-bottom: 0;
+}
+
+main #SASS-text article div {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+@media only screen and (max-width: 1050px) {
+  main #SASS-text article div {
+    grid-template-columns: none;
+  }
+}
+
+main #SASS-text article div #up,
+main #SASS-text article div #down {
+  text-align: center;
+  align-self: center;
+}
+
+main #SASS-text article p {
+  text-align: left;
+  max-width: 68ch;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width: 1050px) {
+  main #SASS-text article p {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main #SASS-text article p {
+    max-width: 95%;
+  }
+}
+
+main picture {
+  justify-self: right;
+  margin-right: 10%;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  main picture {
+    margin-right: 5%;
+  }
+}
+
+main #bubble-section #section-head {
+  margin-left: 3%;
+}
+
+main #bubble-section #bubble1,
+main #bubble-section #bubble2 {
+  display: grid;
+  width: 35%;
+  justify-self: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  main #bubble-section #bubble1,
+  main #bubble-section #bubble2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  main #bubble-section #bubble1,
+  main #bubble-section #bubble2 {
+    width: 75%;
+  }
+}
+
+main #bubble-section #bubble3 {
+  display: grid;
+  width: 35%;
+  justify-self: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 1050px) {
+  main #bubble-section #bubble3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main #bubble-section #bubble3 {
+    width: 75%;
+  }
+}
+
+main #bubble-section #bubble3 #forAnswer {
+  width: 15%;
+}
+
+main #letter {
+  align-self: end;
+  justify-self: left;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+@media only screen and (max-width: 650px) {
+  main #letter img {
+    width: 200px;
+  }
+}
+
+footer {
+  margin-top: 4%;
+  padding: 1%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  footer {
+    font-size: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
